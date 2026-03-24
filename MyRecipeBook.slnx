@@ -1,14 +1,14 @@
 <Solution>
   <Folder Name="/src/" />
   <Folder Name="/src/backend/">
-    <Project Path="MyRecipeBook.Application/MyRecipeBook.Application.csproj" Id="0f25e9e1-223c-4724-b4b6-034addc155c5" />
-    <Project Path="MyRecipeBook.Domain/MyRecipeBook.Domain.csproj" Id="02844dc3-9016-49a9-9a3d-b5345a2594da" />
-    <Project Path="MyRecipeBook.Infrastucture/MyRecipeBook.Infrastucture.csproj" Id="eadded6c-0bb4-4fbf-8315-f46ea76c906f" />
     <Project Path="src/Backend/MyRecipebook.API/MyRecipebook.API.csproj" Id="28287401-502a-43f9-8f2d-d62fa5c85d4d" />
+    <Project Path="src/Backend/MyRecipeBook.Application/MyRecipeBook.Application.csproj" />
+    <Project Path="src/Backend/MyRecipeBook.Domain/MyRecipeBook.Domain.csproj" />
+    <Project Path="src/Backend/MyRecipeBook.Infrastucture/MyRecipeBook.Infrastucture.csproj" />
   </Folder>
   <Folder Name="/src/Shared/">
-    <Project Path="MyRecipeBook.Communication/MyRecipeBook.Communication.csproj" Id="c473ae4a-44ee-4db8-ad91-4dc57959c0b7" />
-    <Project Path="MyRecipeBook.Exceptions/MyRecipeBook.Exceptions.csproj" Id="975723f7-90df-4ad6-bf32-1326c9eb2c68" />
+    <Project Path="src/Shared/MyRecipeBook.Communication/MyRecipeBook.Communication.csproj" />
+    <Project Path="src/Shared/MyRecipeBook.Exceptions/MyRecipeBook.Exceptions.csproj" />
   </Folder>
   <Folder Name="/tests/" />
 </Solution>
