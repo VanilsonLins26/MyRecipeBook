@@ -1,0 +1,12 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace MyRecipeBook.Domain.Entities;
+
+public class EntityBase
+{
+    public long Id { get; set; }
+    public bool Active { get; set; }
+    public DateTime CreatedOn { get; set; } = DateTime.UtcNow;
+}

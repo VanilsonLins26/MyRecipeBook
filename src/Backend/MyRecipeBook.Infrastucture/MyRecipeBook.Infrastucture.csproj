@@ -7,7 +7,22 @@
   </PropertyGroup>
 
   <ItemGroup>
+<<<<<<< Updated upstream:src/Backend/MyRecipeBook.Infrastucture/MyRecipeBook.Infrastucture.csproj
     <ProjectReference Include="..\MyRecipeBook.Domain\MyRecipeBook.Domain.csproj" />
+=======
+    <Compile Update="ResourceMessageException.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ResourceMessageException.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="ResourceMessageException.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResourceMessageException.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+>>>>>>> Stashed changes:MyRecipeBook.Infrastucture/MyRecipeBook.Infrastucture.csproj
   </ItemGroup>
 
 </Project>
