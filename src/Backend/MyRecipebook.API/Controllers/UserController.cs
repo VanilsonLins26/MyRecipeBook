@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-<<<<<<< Updated upstream
-=======
+
 using MyRecipeBook.Application.UseCases;
 using MyRecipeBook.Application.UseCases.User.Register;
->>>>>>> Stashed changes
+
 using MyRecipeBook.Communication.Requests;
+using MyRecipeBook.Communication.Response;
 
 namespace MyRecipebook.API.Controllers;
 
@@ -14,11 +14,7 @@ public class UserController : ControllerBase
 {
 
     [HttpPost]
-<<<<<<< Updated upstream
-    public IActionResult Register(RequestRegisterUserJson request) 
-    {
-        return Created();
-=======
+    [ProducesResponseType(typeof(ResponseRegisterUserJson), StatusCodes.Status201Created)]
     public async Task<IActionResult> Register([FromBody] RequestRegisterUserJson request, [FromServices] IRegisterUserUseCase useCase)
     {
 
@@ -27,6 +23,5 @@ public class UserController : ControllerBase
 
 
         return Created(string.Empty, result);
->>>>>>> Stashed changes
     }
 }
