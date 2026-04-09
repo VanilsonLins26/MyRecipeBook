@@ -4,37 +4,22 @@
 		<TargetFramework>net10.0</TargetFramework>
 		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
-<<<<<<< Updated upstream
-	</PropertyGroup>
-
-	<ItemGroup>
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
-	</ItemGroup>
-
-=======
 		<InvariantGlobalization>false</InvariantGlobalization>
 	</PropertyGroup>
 
 	<ItemGroup>
-
-
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.0"/>
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="9.0.0" />
+		<PackageReference Include="Pomelo.EntityFrameworkCore.MySql.Design" Version="1.1.2" />
 	</ItemGroup>
 
->>>>>>> Stashed changes
 	<ItemGroup>
 		<ProjectReference Include="..\..\Shared\MyRecipeBook.Communication\MyRecipeBook.Communication.csproj" />
 		<ProjectReference Include="..\..\Shared\MyRecipeBook.Exceptions\MyRecipeBook.Exceptions.csproj" />
 		<ProjectReference Include="..\MyRecipeBook.Application\MyRecipeBook.Application.csproj" />
-<<<<<<< Updated upstream
-		  <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.5" />
-=======
 		<ProjectReference Include="..\MyRecipeBook.Infrastucture\MyRecipeBook.Infrastucture.csproj" />
->>>>>>> Stashed changes
-</ItemGroup>
+	</ItemGroup>
 
 </Project>

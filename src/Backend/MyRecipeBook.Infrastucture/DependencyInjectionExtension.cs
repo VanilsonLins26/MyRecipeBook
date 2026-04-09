@@ -6,6 +6,7 @@ using MyRecipeBook.Domain.Repositories.User;
 using MyRecipeBook.Infrastucture.Context;
 using MyRecipeBook.Infrastucture.DataAccess;
 using MyRecipeBook.Infrastucture.DataAccess.Repositories;
+using MyRecipeBook.Infrastucture.Extensions;
 using MySqlConnector;
 using System;
 using System.Collections.Generic;
@@ -19,6 +20,10 @@ public static class DependencyInjectionExtension
     { 
 
         AddRepositories(services);
+
+        if (configuration.IsUnitTestEnviroment())
+            return;
+
         AddDbContext(services, configuration);
 
     }

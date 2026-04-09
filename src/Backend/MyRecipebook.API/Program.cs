@@ -1,15 +1,12 @@
 using Microsoft.OpenApi;
-<<<<<<< Updated upstream
-=======
 using MyRecipebook.API.Filters;
 using MyRecipebook.API.Middleware;
 using MyRecipeBook.Application;
 using MyRecipeBook.Infrastucture;
->>>>>>> Stashed changes
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+
 
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
@@ -46,17 +43,14 @@ builder.Services.AddSwaggerGen(c =>
 
 });
 
-<<<<<<< Updated upstream
-=======
 builder.Services.AddMvc(options => options.Filters.Add(typeof(ExceptionFIlter)));
 
 builder.Services.AddApplication(builder.Configuration);
 builder.Services.AddInfrastructure(builder.Configuration);
->>>>>>> Stashed changes
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
@@ -73,3 +67,5 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+public partial class Program { }

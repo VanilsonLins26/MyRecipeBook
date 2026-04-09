@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using MyRecipeBook.Application.UseCases.User.Register;
+using System.Globalization;
 
 namespace MyRecipebook.API.Middleware;
 
@@ -17,7 +18,7 @@ public class CultureMiddleware
        
         var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
 
-        var cultureInfo = new CultureInfo("en");
+        var cultureInfo = new CultureInfo(requestedCulture);
 
         if(string.IsNullOrWhiteSpace(requestedCulture) == false && supportedLanguages.Any(c => c.Name.Equals(requestedCulture)))
 

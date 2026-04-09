@@ -5,9 +5,6 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
-
-<<<<<<< Updated upstream
-=======
 	<ItemGroup>
 		<PackageReference Include="FluentValidation" Version="12.1.1" />
 
@@ -17,8 +14,6 @@
 
 		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="10.0.5" />
 	</ItemGroup>
-
->>>>>>> Stashed changes
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\MyRecipeBook.Communication\MyRecipeBook.Communication.csproj" />
     <ProjectReference Include="..\..\Shared\MyRecipeBook.Exceptions\MyRecipeBook.Exceptions.csproj" />
