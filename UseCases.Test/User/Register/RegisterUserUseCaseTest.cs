@@ -29,7 +29,7 @@ public class RegisterUserUseCaseTest
         result.Name.Should().Be(request.Name);
     }
 
-    private RegisterUserUseCase CreateUseCase(string? email = null)
+    private static RegisterUserUseCase CreateUseCase(string? email = null)
     {
         var passwordEncripter = PasswordEncripterBuilder.Build();
 
